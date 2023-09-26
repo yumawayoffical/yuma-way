@@ -1,0 +1,18 @@
+[
+  {
+    "linkName": "Home",
+    "linkUrl": "/"
+  },
+  {
+    "linkName": "About",
+    "linkUrl": "/about"
+  },
+  {
+    "linkName": "Research",
+    "linkUrl": "/research"
+  },
+  {
+    "linkName": "Shop",
+    "linkUrl": "/shop"
+  }
+]
