@@ -6,7 +6,7 @@ import "./reset.styles.scss";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <Router basename="/yuma-way">
+    <Router>
       <App />
     </Router>
   </React.StrictMode>
