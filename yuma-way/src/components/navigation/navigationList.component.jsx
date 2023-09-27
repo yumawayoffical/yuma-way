@@ -3,8 +3,9 @@ import NavigationListItemData from "./navigation-links.config.json";
 import { Link } from "react-router-dom";
 import { StyledNavigationList } from "./index.styles";
 
-const NavigationList = ({ setIsOpen }) => {
+const NavigationList = ({ setIsOpen, isDesktopOrLarger }) => {
   const handleListItemOnClick = () => {
+    if (isDesktopOrLarger) return;
     setIsOpen(false);
   };
   return (
