@@ -1,4 +1,6 @@
 [[redirects]]
-  from = "/*"
-  to = "/index.html"
+  from = "/yuma-way/*"
+  to = "/yuma-way/index.html"
   status = 200
+[build]
+base = "yuma-way"
