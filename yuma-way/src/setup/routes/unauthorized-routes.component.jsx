@@ -1,25 +1,23 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import HomePage from "../../pages/home/home.page";
-import AboutPage from "../../pages/about/about.page";
-import ResearchPage from "../../pages/research/research.page";
-import ShopPage from "../../pages/shop/shop.page";
-import SignUpPage from "../../pages/sign-up/sign-up.page";
-import BlogPage from "../../pages/blog/blog.page";
-import ResourcesPage from "../../pages/resources/resources.page";
+import AboutPage from "../../pages/meet-our-team/meet-our-team.page";
+import ResearchPage from "../../pages/science-and-safety/science-and-safety.page";
+import OurServicesPage from "../../pages/our-services/our-services.page";
 import LoginPage from "../../pages/login/login.page";
 import GetStartedPage from "../../pages/get-started/get-started.page";
+import FrequentlyAskedQuestionsPage from "../../pages/faq/faq.page";
+import NewCandidatePage from "../../pages/new-candidate/new-candidate.page";
 const UnauthorizedRoutes = () => {
   return (
     <>
       <Routes>
         <Route path="/" element={<HomePage />}></Route>
-        <Route path="/about" element={<AboutPage />}></Route>
-        <Route path="/research" element={<ResearchPage />}></Route>
-        <Route path="/shop" element={<ShopPage />}></Route>
-        <Route path="/sign-up" element={<SignUpPage />}></Route>
-        <Route path="/blog" element={<BlogPage />}></Route>
-        <Route path="/resources" element={<ResourcesPage />}></Route>
+        <Route path="/our-services" element={<OurServicesPage />}></Route>
+        <Route path="/meet-our-team" element={<AboutPage />}></Route>
+        <Route path="/science-and-safety" element={<ResearchPage />}></Route>
+        <Route path="/new-candidate" element={<NewCandidatePage />}></Route>
+        <Route path="/faq" element={<FrequentlyAskedQuestionsPage />}></Route>
         <Route path="/login" element={<LoginPage />}></Route>
         <Route path="/get-started" element={<GetStartedPage />}></Route>
       </Routes>

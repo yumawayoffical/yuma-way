@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { GlobalStyle, StyledNavigationMobileMenu } from "./index.styles";
 import NavigationList from "./navigationList.component";
-
+import { CgMenuRight, CgClose } from "react-icons/cg";
 const NavigationDropdown = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -15,10 +15,14 @@ const NavigationDropdown = () => {
   return (
     <>
       {isOpen && <GlobalStyle />}
-      <button onClick={handleMenuClickEvent}>Menu</button>
+      <button className="menu-button-open" onClick={handleMenuClickEvent}>
+        <CgMenuRight fontSize={"24px"} />
+      </button>
       {isOpen && (
         <StyledNavigationMobileMenu>
-          <button onClick={handleMenuClickEvent}>X</button>
+          <button className="menu-button-close" onClick={handleMenuClickEvent}>
+            <CgClose fontSize={"24px"} />
+          </button>
           <NavigationList setIsOpen={setIsOpen} />
         </StyledNavigationMobileMenu>
       )}
