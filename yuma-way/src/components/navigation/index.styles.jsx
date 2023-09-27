@@ -4,7 +4,7 @@ import { device } from "../../main.styles";
 
 export const StyledNavigation = styled.nav`
   width: 100%;
-  min-height: 75px;
+  min-height: 95px;
   padding: 1rem 2rem;
   background-color: lightgray;
   display: flex;
@@ -20,7 +20,11 @@ export const StyledNavigation = styled.nav`
   }
   & .link-container {
     display: flex;
-    gap: 1rem;
+    align-items: center;
+    gap: 1.5rem;
+    & .link-item {
+      text-decoration: none;
+    }
   }
 `;
 export const StyledNavigationList = styled.ul`

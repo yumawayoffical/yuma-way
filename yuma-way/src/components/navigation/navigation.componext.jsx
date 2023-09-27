@@ -5,6 +5,7 @@ import NavigationList from "./navigationList.component";
 import { useMediaQuery } from "react-responsive";
 import { device } from "../../main.styles";
 import NavigationDropdown from "./navigation-dropdown.component";
+import CustomButton, { BUTTON_TYPES_CLASSES } from "../button/button.component";
 
 const Navigation = () => {
   const isDesktopOrLarger = useMediaQuery({
@@ -20,8 +21,14 @@ const Navigation = () => {
       {isDesktopOrLarger ? <NavigationList isDesktopOrLarger={isDesktopOrLarger} /> : <NavigationDropdown />}
       {isDesktopOrLarger && (
         <div className="link-container">
-          <Link to="/login">Login</Link>
-          <Link to="/get-started">Get Started</Link>
+          <Link className="link-item" to="/login">
+            Login
+          </Link>
+          <CustomButton buttonType={BUTTON_TYPES_CLASSES.getStarted}>
+            <Link className="link-item" to="/get-started">
+              Get Started
+            </Link>
+          </CustomButton>
         </div>
       )}
     </StyledNavigation>
