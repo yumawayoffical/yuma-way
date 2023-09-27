@@ -1,18 +1,23 @@
 [
   {
-    "linkName": "Home",
-    "linkUrl": "/"
+    "linkName": "Our Services",
+    "linkUrl": "/our-services"
   },
   {
-    "linkName": "About",
-    "linkUrl": "/about"
+    "linkName": "Meet our team",
+    "linkUrl": "/meet-our-team"
   },
   {
-    "linkName": "Research",
-    "linkUrl": "/research"
+    "linkName": "Science & Safety",
+    "linkUrl": "/science-and-safety"
+  },
+
+  {
+    "linkName": "Is this for me",
+    "linkUrl": "/new-candidate"
   },
   {
-    "linkName": "Shop",
-    "linkUrl": "/shop"
+    "linkName": "FAQ's",
+    "linkUrl": "/faq"
   }
 ]

@@ -4,11 +4,12 @@ import { device } from "../../main.styles";
 
 export const StyledNavigation = styled.nav`
   width: 100%;
-  min-height: 75px;
+  min-height: 95px;
   padding: 1rem 2rem;
   background-color: lightgray;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   & .logo {
     height: 55px;
     width: 55px;
@@ -16,6 +17,14 @@ export const StyledNavigation = styled.nav`
     border-radius: 50%;
     /* update later if needed */
     ${GRID_CENTER_ITEM}
+  }
+  & .link-container {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    & .link-item {
+      text-decoration: none;
+    }
   }
 `;
 export const StyledNavigationList = styled.ul`
