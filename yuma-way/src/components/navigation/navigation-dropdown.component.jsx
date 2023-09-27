@@ -6,7 +6,6 @@ const NavigationDropdown = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleMenuClickEvent = () => {
-    console.log("Test");
     if (!isOpen) {
       setIsOpen(true);
     } else {
