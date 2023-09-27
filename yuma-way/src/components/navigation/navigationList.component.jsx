@@ -8,6 +8,7 @@ const NavigationList = ({ setIsOpen, isDesktopOrLarger }) => {
     if (isDesktopOrLarger) return;
     setIsOpen(false);
   };
+
   return (
     <StyledNavigationList>
       {NavigationListItemData.map(({ linkName, linkUrl }, index) => {
@@ -17,6 +18,12 @@ const NavigationList = ({ setIsOpen, isDesktopOrLarger }) => {
           </Link>
         );
       })}
+      {!isDesktopOrLarger && (
+        <div className="link-container">
+          <Link to="/login">Login</Link>
+          <Link to="/get-started">Get Started</Link>
+        </div>
+      )}
     </StyledNavigationList>
   );
 };

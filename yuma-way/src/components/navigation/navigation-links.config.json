@@ -4,12 +4,20 @@
     "linkUrl": "/"
   },
   {
-    "linkName": "About",
+    "linkName": "About Us",
     "linkUrl": "/about"
   },
   {
     "linkName": "Research",
     "linkUrl": "/research"
+  },
+  {
+    "linkName": "Blog",
+    "linkUrl": "/blog"
+  },
+  {
+    "linkName": "Resources",
+    "linkUrl": "/resources"
   },
   {
     "linkName": "Shop",

@@ -9,6 +9,7 @@ export const StyledNavigation = styled.nav`
   background-color: lightgray;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   & .logo {
     height: 55px;
     width: 55px;
@@ -16,6 +17,10 @@ export const StyledNavigation = styled.nav`
     border-radius: 50%;
     /* update later if needed */
     ${GRID_CENTER_ITEM}
+  }
+  & .link-container {
+    display: flex;
+    gap: 1rem;
   }
 `;
 export const StyledNavigationList = styled.ul`

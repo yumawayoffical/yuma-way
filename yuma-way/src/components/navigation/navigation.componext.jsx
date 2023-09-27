@@ -18,6 +18,12 @@ const Navigation = () => {
         {/* <img className="logo" src={Logo} alt="Yuma way company logo... coming soon" /> */}
       </Link>
       {isDesktopOrLarger ? <NavigationList isDesktopOrLarger={isDesktopOrLarger} /> : <NavigationDropdown />}
+      {isDesktopOrLarger && (
+        <div className="link-container">
+          <Link to="/login">Login</Link>
+          <Link to="/get-started">Get Started</Link>
+        </div>
+      )}
     </StyledNavigation>
   );
 };
