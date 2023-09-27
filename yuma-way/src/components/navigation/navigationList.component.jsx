@@ -20,8 +20,12 @@ const NavigationList = ({ setIsOpen, isDesktopOrLarger }) => {
       })}
       {!isDesktopOrLarger && (
         <div className="link-container">
-          <Link to="/login">Login</Link>
-          <Link to="/get-started">Get Started</Link>
+          <Link to="/login" onClick={handleListItemOnClick}>
+            Login
+          </Link>
+          <Link to="/get-started" onClick={handleListItemOnClick}>
+            Get Started
+          </Link>
         </div>
       )}
     </StyledNavigationList>
