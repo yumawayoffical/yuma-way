@@ -17,7 +17,7 @@ const Navigation = () => {
         {/* Uncomment when we get a asset for logo and replace div .logo */}
         {/* <img className="logo" src={Logo} alt="Yuma way company logo... coming soon" /> */}
       </Link>
-      {isDesktopOrLarger ? <NavigationList /> : <NavigationDropdown />}
+      {isDesktopOrLarger ? <NavigationList isDesktopOrLarger={isDesktopOrLarger} /> : <NavigationDropdown />}
     </StyledNavigation>
   );
 };
