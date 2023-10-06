@@ -8,9 +8,11 @@ import LoginPage from "../../pages/login/login.page";
 import GetStartedPage from "../../pages/get-started/get-started.page";
 import FrequentlyAskedQuestionsPage from "../../pages/faq/faq.page";
 import NewCandidatePage from "../../pages/new-candidate/new-candidate.page";
+import ScrollToTop from "../../components/scroll-to-top/scroll-to-top.component";
 const UnauthorizedRoutes = () => {
   return (
     <>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<HomePage />}></Route>
         <Route path="/our-services" element={<OurServicesPage />}></Route>

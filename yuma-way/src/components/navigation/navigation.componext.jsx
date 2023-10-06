@@ -12,7 +12,7 @@ const Navigation = () => {
     query: device.desktop,
   });
   return (
-    <StyledNavigation>
+    <StyledNavigation id="navigation">
       <Link to="/">
         <div className="logo">Logo</div>
         {/* Uncomment when we get a asset for logo and replace div .logo */}
