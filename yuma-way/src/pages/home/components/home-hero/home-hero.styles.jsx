@@ -1,20 +1,26 @@
 import styled from "styled-components";
 import { device } from "../../../../main.styles";
-import PLACEHOLDER_IMAGE_UPDATE_LATER from "../../../../assets/heroImagePlaceHolder.jpg";
+import PLACEHOLDER_IMAGE_UPDATE_LATER from "../../../../assets/hero-section-image1.jpg";
 
 export const StyledHeroSection = styled.section`
   width: 100%;
-  height: 90vh;
+  height: 85vh;
+  max-height: 575px;
   position: relative;
   padding: 1rem;
+  /* @media ${device.tablet} {
+    max-height: 650px;
+
+    height: 75vh;
+  } */
   @media ${device.laptop} {
+    max-height: 800px;
     height: 90vh;
     padding: 2rem;
   }
   @media ${device.desktop} {
     height: 100vh;
   }
-
   & .hero-text-container {
     color: #fff;
     width: 100%;
@@ -23,12 +29,17 @@ export const StyledHeroSection = styled.section`
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    padding-top: 5rem;
-    padding-bottom: 2rem;
+    padding: 3rem 0 2rem;
+    p {
+      max-width: 400px;
+    }
 
     & .get-started-btn {
       margin-top: auto;
       max-width: 300px;
+      @media ${device.tablet} {
+        margin-bottom: 4rem;
+      }
     }
   }
 
@@ -43,7 +54,7 @@ export const StyledHeroSection = styled.section`
       opacity: 0.7;
       max-height: 100vh;
       width: 100%;
-      filter: blur(1.5px);
+      filter: blur(1.2px);
     }
     &::before {
       content: "";

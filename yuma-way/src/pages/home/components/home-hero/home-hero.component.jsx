@@ -2,6 +2,7 @@ import React from "react";
 import CustomButton, { BUTTON_TYPES_CLASSES } from "../../../../components/button/button.component";
 import { StyledHeroSection } from "./home-hero.styles";
 import { HeaderOneText, MainText } from "../../../../main.styles";
+import { Link } from "react-router-dom";
 
 const HomeHero = () => {
   return (
@@ -13,7 +14,7 @@ const HomeHero = () => {
           happiness.
         </MainText>
         <CustomButton className="get-started-btn" buttonType={BUTTON_TYPES_CLASSES.getStarted}>
-          Get Started Today!
+          <Link to="/get-started">Get Started Today!</Link>
         </CustomButton>
       </div>
 

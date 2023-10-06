@@ -3,6 +3,7 @@ import { StyledHowItWorksSection } from "./how-it-works.styles";
 import { HeaderTwoText, MainText } from "../../../../main.styles";
 import HowItWorksAccordion from "../how-it-works-accordion/how-it-works-accordion.component";
 import CustomButton, { BUTTON_TYPES_CLASSES } from "../../../../components/button/button.component";
+import { Link } from "react-router-dom";
 
 const HowItWorks = () => {
   return (
@@ -15,7 +16,7 @@ const HowItWorks = () => {
       </MainText>
       <HowItWorksAccordion />
       <CustomButton buttonType={BUTTON_TYPES_CLASSES.getStarted} style={{ marginTop: "2rem" }}>
-        Get Started Today!
+        <Link to="/get-started">Get Started Today!</Link>
       </CustomButton>
     </StyledHowItWorksSection>
   );
