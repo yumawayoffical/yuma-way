@@ -5,7 +5,7 @@ import { HeaderOneText, MainText } from "../../../../main.styles";
 
 const HomeHero = () => {
   return (
-    <StyledHeroSection>
+    <StyledHeroSection id="hero-section">
       <div className="hero-text-container">
         <HeaderOneText>Revitalize Your Mind, Reclaim Your Happiness</HeaderOneText>
         <MainText>

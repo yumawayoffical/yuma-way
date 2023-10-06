@@ -5,8 +5,7 @@ import PLACEHOLDER_IMAGE_UPDATE_LATER from "../../../../assets/heroImagePlaceHol
 export const StyledHeroSection = styled.section`
   width: 100%;
   height: 90vh;
-  position: absolute;
-  inset: 0;
+  position: relative;
   padding: 1rem;
   @media ${device.laptop} {
     height: 90vh;

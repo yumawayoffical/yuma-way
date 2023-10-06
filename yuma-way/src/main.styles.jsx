@@ -25,12 +25,18 @@ const paragraphFontSizes = {
   large: "18px",
   xLarge: "20px",
 };
-// Heading font sizes (h1, )
+// Heading font sizes (h1, h2 )
 const h1fontSizes = {
   small: "36px",
   medium: "48px",
   large: "60px",
   xLarge: "72px",
+};
+const h2fontSizes = {
+  small: parseInt(h1fontSizes.small) / 1.68 + "px",
+  medium: parseInt(h1fontSizes.medium) / 1.68 + "px",
+  large: parseInt(h1fontSizes.large) / 1.68 + "px",
+  xLarge: parseInt(h1fontSizes.xLarge) / 1.68 + "px",
 };
 
 // Color palette
@@ -47,6 +53,10 @@ export const colorPalette = {
 };
 
 // Global styled components
+
+export const StyledSpacing = styled.div`
+  margin-block: ${(props) => `${props.size}px`};
+`;
 export const StyledPageContainer = styled.div`
   min-height: 100vh;
   max-width: 1400px; // change based on client request
@@ -94,6 +104,21 @@ export const HeaderOneText = styled.h1`
   @media ${device.desktopLarge} {
     font-size: ${h1fontSizes.xLarge};
     line-height: 76px;
+  }
+`;
+
+export const HeaderTwoText = styled.h2`
+  font-family: "Poppins", sans-serif;
+  font-size: ${h2fontSizes.small};
+  @media ${device.tablet} {
+    font-size: ${h2fontSizes.medium};
+  }
+  @media ${device.desktop} {
+    font-size: ${h2fontSizes.large};
+  }
+
+  @media ${device.desktopLarge} {
+    font-size: ${h2fontSizes.xLarge};
   }
 `;
 
