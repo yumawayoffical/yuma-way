@@ -39,6 +39,13 @@ const h2fontSizes = {
   xLarge: parseInt(h1fontSizes.xLarge) / 1.68 + "px",
 };
 
+const h3fontSizes = {
+  small: parseInt(h2fontSizes.small) / 1.68 + "px",
+  medium: parseInt(h2fontSizes.medium) / 1.68 + "px",
+  large: parseInt(h2fontSizes.large) / 1.68 + "px",
+  xLarge: parseInt(h2fontSizes.xLarge) / 1.68 + "px",
+};
+
 // Color palette
 export const colorPalette = {
   primary: {
@@ -70,6 +77,7 @@ export const StyledPageContainer = styled.div`
 `;
 
 export const MainText = styled.p`
+  color: #6d6d6d; // update when needed
   font-family: "Archivo", sans-serif;
   font-size: ${paragraphFontSizes.small}; // Default font size
 
@@ -108,6 +116,7 @@ export const HeaderOneText = styled.h1`
 `;
 
 export const HeaderTwoText = styled.h2`
+  padding-bottom: 1.5rem;
   font-family: "Poppins", sans-serif;
   font-size: ${h2fontSizes.small};
   @media ${device.tablet} {
@@ -119,6 +128,21 @@ export const HeaderTwoText = styled.h2`
 
   @media ${device.desktopLarge} {
     font-size: ${h2fontSizes.xLarge};
+  }
+`;
+
+export const HeaderThreeText = styled.h2`
+  font-family: "Poppins", sans-serif;
+  font-size: ${h3fontSizes.small};
+  @media ${device.tablet} {
+    font-size: ${h3fontSizes.medium};
+  }
+  @media ${device.desktop} {
+    font-size: ${h3fontSizes.large};
+  }
+
+  @media ${device.desktopLarge} {
+    font-size: ${h3fontSizes.xLarge};
   }
 `;
 

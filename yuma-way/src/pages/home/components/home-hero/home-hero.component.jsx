@@ -8,7 +8,7 @@ const HomeHero = () => {
     <StyledHeroSection id="hero-section">
       <div className="hero-text-container">
         <HeaderOneText>Revitalize Your Mind, Reclaim Your Happiness</HeaderOneText>
-        <MainText>
+        <MainText style={{ color: "#fff" }}>
           Don't let mental health challenges hold you back. Ketamine Therapy is your key to revitalizing your mind and taking back control of your
           happiness.
         </MainText>
@@ -19,7 +19,7 @@ const HomeHero = () => {
 
       <div className="hero-image-container">
         <span
-          class="background-image"
+          className="background-image"
           role="img"
           aria-label="Young lady with her eyes closed breathing in the fresh air around in total bliss."
         ></span>
