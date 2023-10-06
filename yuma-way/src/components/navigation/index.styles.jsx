@@ -1,12 +1,12 @@
 import { createGlobalStyle, styled } from "styled-components";
-import { FLEX_ALIGN_ITEM_CENTER, GRID_CENTER_ITEM } from "../../main.styles";
+import { FLEX_ALIGN_ITEM_CENTER, GRID_CENTER_ITEM, LINK_HOVER, colorPalette } from "../../main.styles";
 import { device } from "../../main.styles";
 
 export const StyledNavigation = styled.nav`
   width: 100%;
   min-height: 95px;
   padding: 1rem 2rem;
-  background-color: lightgray;
+  background-color: ${colorPalette.secondary.secondaryOne};
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -28,17 +28,36 @@ export const StyledNavigation = styled.nav`
   }
 `;
 export const StyledNavigationList = styled.ul`
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 2rem auto 0 auto;
+  gap: 2rem;
+
   & .link-item {
-    text-decoration: none;
+    ${LINK_HOVER}
   }
+
   & .link-list-item {
     list-style: none;
-    color: #000; // update later if needed
+    color: #fff; // update later if needed
+    border-bottom: 2px solid #fff;
+    padding-bottom: 1rem;
+    font-size: 26px;
+
+    @media ${device.desktop} {
+      flex-direction: row;
+      border-bottom: none;
+      padding-bottom: 0;
+      font-size: 20px;
+    }
   }
 
   @media ${device.desktop} {
     ${FLEX_ALIGN_ITEM_CENTER}
     gap: 2rem;
+    margin: 0;
+    max-width: 700px;
   }
 `;
 
@@ -60,7 +79,7 @@ export const StyledNavigationMobileMenu = styled.div`
   &:before {
     content: "";
     backdrop-filter: blur(5px);
-    background-color: #fff;
+    background-color: #444242;
     position: fixed;
     overflow: hidden;
     inset: 0;

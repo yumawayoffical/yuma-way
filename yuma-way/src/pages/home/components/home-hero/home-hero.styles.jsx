@@ -9,27 +9,27 @@ export const StyledHeroSection = styled.section`
   inset: 0;
   padding: 1rem;
   @media ${device.laptop} {
-    height: 80vh;
+    height: 90vh;
     padding: 2rem;
   }
   @media ${device.desktop} {
-    height: 90vh;
+    height: 100vh;
   }
 
   & .hero-text-container {
     color: #fff;
     width: 100%;
+    max-width: 750px;
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: 2rem;
-    padding-top: 8rem;
+    padding-top: 5rem;
     padding-bottom: 2rem;
 
     & .get-started-btn {
       margin-top: auto;
+      max-width: 300px;
     }
   }
 
@@ -42,7 +42,7 @@ export const StyledHeroSection = styled.section`
       background-size: cover;
       background-position: center;
       opacity: 0.7;
-      max-height: 90vh;
+      max-height: 100vh;
       width: 100%;
       filter: blur(1.5px);
     }

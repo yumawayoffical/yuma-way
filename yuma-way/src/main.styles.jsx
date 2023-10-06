@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
 
-// Sizes for breakpoint, fonts, etc
+// Sizes for screen breakpoint, fonts, etc
 const size = {
   mobile: "20rem", //320px
   tablet: "30rem", //480px
@@ -8,6 +8,8 @@ const size = {
   desktop: "64rem", //1024px
   desktopLarge: "76rem", //1216px
 };
+
+// Media queries for breakpoints
 export const device = {
   mobile: `(min-width: ${size.mobile})`,
   tablet: `(min-width: ${size.tablet})`,
@@ -16,18 +18,32 @@ export const device = {
   desktopLarge: `(min-width: ${size.desktopLarge})`,
 };
 
+// Paragraph font sizes
 const paragraphFontSizes = {
   small: "14px",
   medium: "16px",
   large: "18px",
   xLarge: "20px",
 };
-
+// Heading font sizes (h1, )
 const h1fontSizes = {
   small: "36px",
   medium: "48px",
   large: "60px",
   xLarge: "72px",
+};
+
+// Color palette
+export const colorPalette = {
+  primary: {
+    primaryOne: "#fff",
+  },
+  secondary: {
+    secondaryOne: "rgba(169, 189, 255, 0.8)",
+  },
+  accent: {
+    accentOne: "#94ffcb",
+  },
 };
 
 // Global styled components
@@ -93,4 +109,23 @@ export const FLEX_ALIGN_ITEM_CENTER = css`
   flex-direction: row;
 `;
 
-// Spacing
+export const LINK_HOVER = css`
+  list-style: none;
+  text-decoration: none;
+  cursor: pointer;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: ${colorPalette.accent.accentOne};
+    transition: width 0.5s ease-in-out;
+    transform: translateX(-50%);
+  }
+  &:hover::before {
+    width: 100%;
+  }
+`;
