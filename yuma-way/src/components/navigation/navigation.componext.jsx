@@ -18,6 +18,13 @@ const Navigation = () => {
         {/* Uncomment when we get a asset for logo and replace div .logo */}
         {/* <img className="logo" src={Logo} alt="Yuma way company logo... coming soon" /> */}
       </Link>
+      {!isDesktopOrLarger && (
+        <CustomButton style={{ margin: "1rem 1rem 1rem auto" }} buttonType={BUTTON_TYPES_CLASSES.getStarted}>
+          <Link className="link-item" to="/get-started">
+            Get Started
+          </Link>
+        </CustomButton>
+      )}
       {isDesktopOrLarger ? <NavigationList isDesktopOrLarger={isDesktopOrLarger} /> : <NavigationDropdown />}
       {isDesktopOrLarger && (
         <div className="link-container">

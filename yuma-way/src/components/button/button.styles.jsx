@@ -23,3 +23,8 @@ export const DropDownMenuButton = styled.button`
 export const CloseButton = styled.button`
   border: 2px solid red;
 `;
+
+export const AccordionButton = styled.button`
+  border: none;
+  background: transparent;
+`;
