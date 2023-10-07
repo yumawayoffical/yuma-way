@@ -40,10 +40,10 @@ const h2fontSizes = {
 };
 
 const h3fontSizes = {
-  small: parseInt(h2fontSizes.small) / 1.68 + "px",
-  medium: parseInt(h2fontSizes.medium) / 1.68 + "px",
+  small: parseInt(h2fontSizes.small) / 1.15 + "px",
+  medium: parseInt(h2fontSizes.medium) / 1.25 + "px",
   large: parseInt(h2fontSizes.large) / 1.68 + "px",
-  xLarge: parseInt(h2fontSizes.xLarge) / 1.68 + "px",
+  xLarge: parseInt(h2fontSizes.xLarge) / 1.85 + "px",
 };
 
 // Color palette
@@ -178,3 +178,11 @@ export const LINK_HOVER = css`
     width: 100%;
   }
 `;
+
+export const boxShadows = {
+  boxShadowLighter: "rgba(0, 0, 0, 0.1) 0px 10px 20px, rgba(0, 0, 0, 0.15) 0px 6px 6px",
+  boxShadowLight: "rgba(0, 0, 0, 0.15) 0px 10px 20px, rgba(0, 0, 0, 0.19) 0px 6px 6px",
+  boxShadowBase: "rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px",
+  boxShadowDark: "rgba(0, 0, 0, 0.23) 0px 10px 20px, rgba(0, 0, 0, 0.27) 0px 6px 6px",
+  boxShadowDarker: "rgba(0, 0, 0, 0.27) 0px 10px 20px, rgba(0, 0, 0, 0.31) 0px 6px 6px",
+};
