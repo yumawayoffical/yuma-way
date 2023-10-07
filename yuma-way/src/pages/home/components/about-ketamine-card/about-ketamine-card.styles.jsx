@@ -1,16 +1,19 @@
 import styled from "styled-components";
-import { LINK_HOVER, boxShadows, device } from "../../../../main.styles";
+import { LINK_HOVER, boxShadows, colorPalette, device } from "../../../../main.styles";
 
 export const StyledAboutKetamineCard = styled.div`
-  height: 300px;
-  width: 350px;
+  height: 250px;
   border-radius: 12px;
   padding: 2rem;
+  width: 300px;
+
   position: relative;
   box-shadow: ${boxShadows.boxShadowBase};
 
   margin-inline: auto;
   @media ${device.tablet} {
+    height: 325px;
+    width: 350px;
   }
 
   & .card-list {
@@ -23,7 +26,7 @@ export const StyledAboutKetamineCard = styled.div`
     gap: 0.5rem;
     color: #fff;
     padding: 0.8rem;
-    background-color: #6eb995;
+    background-color: ${colorPalette.accent.accentOne};
     position: absolute;
     bottom: 0;
     right: 0;

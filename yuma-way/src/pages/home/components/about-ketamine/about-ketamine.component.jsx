@@ -9,7 +9,6 @@ const AboutKetamine = () => {
   return (
     <StyledAboutKetamineSection id="about-ketamine-section">
       <HeaderTwoText>Why choose ketamine?</HeaderTwoText>
-
       <MainText>
         We understand that the path to mental wellness is unique for each individual. Traditional treatments don't always provide the relief and
         breakthroughs needed to overcome the challenges of depression, anxiety, and other mental health conditions. This is where psychedelic-assisted

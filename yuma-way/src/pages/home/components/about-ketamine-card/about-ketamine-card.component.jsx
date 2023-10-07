@@ -1,7 +1,7 @@
 import React from "react";
 import { StyledAboutKetamineCard } from "./about-ketamine-card.styles";
 import { Link } from "react-router-dom";
-import { HeaderThreeText, MainText } from "../../../../main.styles";
+import { HeaderThreeText, MainText, colorPalette } from "../../../../main.styles";
 import { AiOutlineArrowRight } from "react-icons/ai";
 const AboutKetamineCard = ({ data }) => {
   const { title, subtopics } = data;
@@ -21,7 +21,7 @@ const AboutKetamineCard = ({ data }) => {
       </ul>
 
       <Link className="card-link-cta" to="/science-and-safety">
-        <p>Learn More</p>
+        <MainText style={{ color: colorPalette.accent.accentTextLight }}>Learn More</MainText>
         <AiOutlineArrowRight />
       </Link>
     </StyledAboutKetamineCard>

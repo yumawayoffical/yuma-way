@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { StyledAccordionCard } from "./how-it-works-accordion-card.styles";
 import CustomButton, { BUTTON_TYPES_CLASSES } from "../../../../components/button/button.component";
 import { AiOutlinePlus, AiOutlineMinus, AiOutlineArrowRight } from "react-icons/ai";
-import { HeaderThreeText, MainText } from "../../../../main.styles";
+import { HeaderThreeText, MainText, colorPalette } from "../../../../main.styles";
 import { Link } from "react-router-dom";
 
 const HowItWorksAccordionCard = ({ cardData }) => {
@@ -18,7 +18,11 @@ const HowItWorksAccordionCard = ({ cardData }) => {
       <div className="card-header">
         <HeaderThreeText>{title}</HeaderThreeText>
         <CustomButton buttonType={BUTTON_TYPES_CLASSES.accordion} onClick={handleAccordionClickEvent}>
-          {isActive ? <AiOutlineMinus fontSize={24} /> : <AiOutlinePlus fontSize={24} />}
+          {isActive ? (
+            <AiOutlineMinus fontSize={24} style={{ color: colorPalette.accent.accentOne }} />
+          ) : (
+            <AiOutlinePlus fontSize={24} style={{ color: colorPalette.accent.accentOne }} />
+          )}
         </CustomButton>
       </div>
       {isActive && (

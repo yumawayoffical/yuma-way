@@ -55,8 +55,23 @@ export const colorPalette = {
     secondaryOne: "rgba(169, 189, 255, 0.8)",
   },
   accent: {
-    accentOne: "#94ffcb",
+    accentOne: "#6eb995",
+    accentOneDark: "#41745b",
+
+    accentTwo: "#bfdfd0ed",
+    accentText: "#6d6d6d",
+    accentTextDark: "#414040",
+    accentTextLight: "#eceaea",
   },
+};
+
+// Box shadows
+export const boxShadows = {
+  boxShadowLighter: "rgba(0, 0, 0, 0.1) 0px 10px 20px, rgba(0, 0, 0, 0.15) 0px 6px 6px",
+  boxShadowLight: "rgba(0, 0, 0, 0.15) 0px 10px 20px, rgba(0, 0, 0, 0.19) 0px 6px 6px",
+  boxShadowBase: "rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px",
+  boxShadowDark: "rgba(0, 0, 0, 0.23) 0px 10px 20px, rgba(0, 0, 0, 0.27) 0px 6px 6px",
+  boxShadowDarker: "rgba(0, 0, 0, 0.27) 0px 10px 20px, rgba(0, 0, 0, 0.31) 0px 6px 6px",
 };
 
 // Global styled components
@@ -77,7 +92,7 @@ export const StyledPageContainer = styled.div`
 `;
 
 export const MainText = styled.p`
-  color: #6d6d6d; // update when needed
+  color: ${colorPalette.accent.accentText}; // update when needed
   font-family: "Archivo", sans-serif;
   font-size: ${paragraphFontSizes.small}; // Default font size
 
@@ -178,11 +193,3 @@ export const LINK_HOVER = css`
     width: 100%;
   }
 `;
-
-export const boxShadows = {
-  boxShadowLighter: "rgba(0, 0, 0, 0.1) 0px 10px 20px, rgba(0, 0, 0, 0.15) 0px 6px 6px",
-  boxShadowLight: "rgba(0, 0, 0, 0.15) 0px 10px 20px, rgba(0, 0, 0, 0.19) 0px 6px 6px",
-  boxShadowBase: "rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px",
-  boxShadowDark: "rgba(0, 0, 0, 0.23) 0px 10px 20px, rgba(0, 0, 0, 0.27) 0px 6px 6px",
-  boxShadowDarker: "rgba(0, 0, 0, 0.27) 0px 10px 20px, rgba(0, 0, 0, 0.31) 0px 6px 6px",
-};
