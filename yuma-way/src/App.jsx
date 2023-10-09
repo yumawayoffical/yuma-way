@@ -7,7 +7,7 @@ function App() {
     <>
       <ScrollToTop />
       <Navigation />
-      <UnauthorizedRoutes />;
+      <UnauthorizedRoutes />
     </>
   );
 }

@@ -1,4 +1,5 @@
 import styled, { css } from "styled-components";
+import { colorPalette } from "../../main.styles";
 
 const DEFAULT_BUTTON_STYLES = css`
   padding: 0.7rem 1rem;
@@ -12,9 +13,13 @@ export const BaseButton = styled.button`
 export const GetStartedButton = styled.button`
   ${DEFAULT_BUTTON_STYLES}
   padding: 0.7rem 1.5rem !important;
+  border: 2px solid ${colorPalette.accent.accentTwo};
+  background-color: ${colorPalette.accent.accentOne};
 
-  border: 2px solid green;
-  color: #000;
+  a {
+    color: ${colorPalette.accent.accentTextLight};
+    text-decoration: none;
+  }
 `;
 
 export const DropDownMenuButton = styled.button`

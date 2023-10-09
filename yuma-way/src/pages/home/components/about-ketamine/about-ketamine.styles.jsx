@@ -1,10 +1,17 @@
 import styled from "styled-components";
+import { device } from "../../../../main.styles";
 
 export const StyledAboutKetamineSection = styled.section`
-  border: 1px solid orange;
   min-height: 100vh;
 `;
 
-export const StyledAboutKetamineContainer = styled.div`
-  border: 1px solid purple;
+export const StyledAboutKetamineCardContainer = styled.div`
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  margin-top: 1.5rem;
+
+  @media ${device.laptop} {
+    flex-direction: row;
+  }
 `;

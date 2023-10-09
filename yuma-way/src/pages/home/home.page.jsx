@@ -11,9 +11,9 @@ const HomePage = () => {
       <HomeHero />
       <StyledPageContainer id="home-page">
         <HowItWorks />
-        <StyledSpacing size={32} />
+        <StyledSpacing size={64} />
         <ExploreOurServices />
-        <StyledSpacing size={32} />
+        <StyledSpacing size={64} />
         <AboutKetamine />
       </StyledPageContainer>
     </>
